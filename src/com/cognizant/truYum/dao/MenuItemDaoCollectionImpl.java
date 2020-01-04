@@ -48,27 +48,27 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
                 menuItems.add(menuItem);
             }
         }
-        return  menuItems;
+        return menuItems;
     }
 
     @Override
     public void modifyMenuItem(MenuItem menuitem) {
-for(int i=0; i<menuItemList.size();i++) {
-    if(menuItemList.get(i).getId()==menuitem.getId()) {
-        menuItemList.set(i,menuitem);
-    }
-}
+        for (int i = 0; i < menuItemList.size(); i++) {
+            if (menuItemList.get(i).getId() == menuitem.getId()) {
+                menuItemList.set(i, menuitem);
+            }
+        }
     }
 
     @Override
     public MenuItem getMenuItem(long menuItemId) {
-    for (MenuItem menuItem : menuItemList) {
-        if(menuItem.getId()==menuItemId) {
-            return menuItem;
+        for (MenuItem menuItem : menuItemList) {
+            if (menuItem.getId() == menuItemId) {
+                return menuItem;
+            }
+
         }
-    
-}
-        return null;//when id is not existing ,this line executes.
+        return null;// when id is not existing ,this line executes.
     }
 
 }

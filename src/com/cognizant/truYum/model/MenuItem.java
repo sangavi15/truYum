@@ -135,8 +135,10 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
-        return String.format("%-10s%-18s%-15s%-10s%-18s%-15s%-15s",id,name,price,(active==true?"Yes":"No"),sdf.format(dateOfLaunch),category,(freeDelivery==true?"yes":"No"));
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        return String.format("%-10s%-18s%-15s%-10s%-18s%-15s%-15s", id, name, price,
+                (active == true ? "Yes" : "No"), sdf.format(dateOfLaunch), category,
+                (freeDelivery == true ? "yes" : "No"));
 
-}
+    }
 }
