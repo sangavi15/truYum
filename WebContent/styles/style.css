@@ -90,9 +90,9 @@ a {
 /*menu item list customer notification*/
 #notification {
     color: #27ba53;
-    top: 20%;
+    top: 16%;
     position: fixed;
-    margin-left: 15%;
+    margin-left: 17%;
     font-family: Calibri;
 }
 
@@ -125,7 +125,7 @@ a {
 /*menu item list customer notification*/
 #cart-notification {
     color: #27ba53;
-    top: 18%;
+    top: 15%;
     position: fixed;
     margin-left: 14%;
     font-family: Calibri;

@@ -1,16 +1,16 @@
-function valid() {
+function validateMenuItemForm() {
 
-    var name = document.forms["menu"]["title"].value;
+    var name = document.forms["menuItemForm"]["name"].value;
     var nameRegExp = (/^[a-zA-Z]{2,65}$/);
     if (name == "") {
-        alert("Title is required");
+        alert("Name is required");
         return false;
     }
     if (!name.match(nameRegExp)) {
-        alert("Title should have 2 to 65 characters");
+        alert("Name should have 2 to 65 characters");
         return false;
     }
-    var price = document.forms["menu"]["price"].value;
+    var price = document.forms["menuItemForm"]["price"].value;
     if (price == "") {
         alert("Price is required");
         return false;
@@ -19,12 +19,12 @@ function valid() {
         alert("Price has to be a number");
         return false;
     }
-    var date = document.forms["menu"]["dateOfLaunch"].value;
+    var date = document.forms["menuItemForm"]["dateOfLaunch"].value;
     if (date == "") {
         alert("Date of Lauch is required");
         return false;
     }
-    var category = document.forms["menu"]["category"].value;
+    var category = document.forms["menuItemForm"]["category"].value;
     if (category == "") {
         alert("Select one category");
         return false;
