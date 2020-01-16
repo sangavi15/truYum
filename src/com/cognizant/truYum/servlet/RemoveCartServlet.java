@@ -24,6 +24,7 @@ public class RemoveCartServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
+
             long userId = 1L;
             long menuItemId = Long.parseLong(request.getParameter("menuItemId"));
             CartDao cartDao = new CartDaoCollectionImpl();

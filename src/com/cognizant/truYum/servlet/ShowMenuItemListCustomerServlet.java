@@ -19,6 +19,7 @@ public class ShowMenuItemListCustomerServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         MenuItemDao menuItemDao = new MenuItemDaoCollectionImpl();
         List<MenuItem> menuItemList = menuItemDao.getMenuItemListCustomer();
         request.setAttribute("menuItem", menuItemList);

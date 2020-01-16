@@ -22,6 +22,7 @@ public class ShowCartServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
+
             long userId = 1L;
             CartDao cartDao = new CartDaoCollectionImpl();
             Cart cart = cartDao.getAllCartItems(userId);

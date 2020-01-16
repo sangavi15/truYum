@@ -17,6 +17,7 @@ public class ShowEditMenuItemServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         long menuItemId = Long.parseLong(request.getParameter("menuItemId"));
         MenuItemDao menuItemDao = new MenuItemDaoCollectionImpl();
         MenuItem menuItem = menuItemDao.getMenuItem(menuItemId);

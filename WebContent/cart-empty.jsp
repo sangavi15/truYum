@@ -16,6 +16,6 @@
         <b>No items in cart.Use'Add to Cart'option in </b><a href="ShowMenuItemListCustomer"
             id="cart-empty"><b>Menu item List.</b></a>
     </p>
-    <footer> <span id="Copy-right">Copyright &copy; 2019</span> </footer>
+<footer> <span id="Copy-right">Copyright &copy; 2019</span> </footer>
 </body>
 </html>

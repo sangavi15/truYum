@@ -15,6 +15,6 @@
     <p id="status">
         <b>Menu Item details saved successfully</b>
     </p>
-    <footer> <span id="copy-right">Copyright &copy; 2019</span> </footer>
+  <footer> <span id="copy-right">Copyright &copy; 2019</span> </footer>
 </body>
 </html>
