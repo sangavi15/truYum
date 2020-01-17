@@ -50,14 +50,14 @@
                     </c:choose></td>
 
                 <td><f:formatDate value="${menuItem.getDateOfLaunch()}" pattern="dd/MM/yyyy"
-                        var="dateOfLaunch" /> <input type="text" size="20" name="dateOfLaunch"
+                        var="dateOfLaunch" /> <input type="date"  name="dateOfLaunch"
                     id="dol" value="${dateOfLaunch}" autocomplete="off" placeholder="27/04/2022" /></td>
                 <td><select name="category">
                         <option value="${menuItem.getCategory()}">${menuItem.getCategory()}</option>
-                        <option value="starters">Starters</option>
-                        <option value="main course">Main Course</option>
-                        <option value="dessert">Dessert</option>
-                        <option value="drinks">Drinks</option>
+                        <option value="Starters">Starters</option>
+                        <option value="Main course">Main Course</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Drinks">Drinks</option>
                 </select></td>
             </tr>
             <tr>

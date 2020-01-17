@@ -36,7 +36,7 @@
         <c:forEach items="${menuItem }" var="menuItem">
             <tr>
                 <td align="left">${menuItem.getName()}</td>
-                <td align="right">${menuItem.getPrice()}</td>
+                <td align="right">Rs. ${menuItem.getPrice()}</td>
                 <td align="center"><c:choose>
                         <c:when test="${menuItem.isActive()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
