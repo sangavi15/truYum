@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.cognizant.truyum.dao.CartDao;
 import com.cognizant.truyum.dao.CartDaoCollectionImpl;
 import com.cognizant.truyum.dao.CartEmptyException;
-import com.cognizant.truyum.dao.MenuItemDao;
-import com.cognizant.truyum.dao.MenuItemDaoCollectionImpl;
 import com.cognizant.truyum.model.Cart;
 import com.cognizant.truyum.model.MenuItem;
 

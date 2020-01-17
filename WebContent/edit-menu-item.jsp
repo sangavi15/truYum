@@ -45,12 +45,12 @@
                     </c:when>
                         <c:otherwise>
                             <input type="radio" value="Yes" name="active" />Yes<input type="radio"
-                                value="No" name="active" />No
+                                value="No" name="active" checked="checked"/>No
                      </c:otherwise>
                     </c:choose></td>
 
                 <td><f:formatDate value="${menuItem.getDateOfLaunch()}" pattern="dd/MM/yyyy"
-                        var="dateOfLaunch" /> <input type="date"  name="dateOfLaunch"
+                        var="dateOfLaunch" /> <input type="text" name="dateOfLaunch"
                     id="dol" value="${dateOfLaunch}" autocomplete="off" placeholder="27/04/2022" /></td>
                 <td><select name="category">
                         <option value="${menuItem.getCategory()}">${menuItem.getCategory()}</option>
