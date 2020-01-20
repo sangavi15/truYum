@@ -41,7 +41,7 @@
                         <c:when test="${menuItem.isFreeDelivery()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-                <td align="right">Rs. ${menuItem.getPrice()}</td>
+                <td align="right"><f:formatNumber type="currency" currencySymbol="Rs." value= "${menuItem.getPrice()}"/></td></td>
                 <td align="center">${menuItem.getCategory()}</td>
                 <td align="center"><a href="AddToCart?menuItemId=${menuItem.getId()}">Add
                         to Cart</a></td>
